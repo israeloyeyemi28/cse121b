@@ -59,7 +59,7 @@ let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
 document.querySelector("#year").innerHTML = currentYear;
 
-document.querySelector("#getTotalDue").addEventListener("click", calculateTotal);
+document.querySelector("#getTotal").addEventListener("click", calculateTotal);
 
 function calculateTotal() {
   // Declare and instantiate a variable with the numeric value from the subtotal field
