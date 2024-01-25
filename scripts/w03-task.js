@@ -54,10 +54,6 @@ function divideNumbers() {
 document
   .querySelector("#divideNumbers")
   .addEventListener("click", divideNumbers);
-/* Decision Structure */
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
-document.querySelector("#year").innerHTML = currentYear;
 
 document.querySelector("#getTotal").addEventListener("click", calculateTotal);
 
