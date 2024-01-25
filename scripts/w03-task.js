@@ -58,6 +58,26 @@ document
 let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
 document.querySelector("#year").innerHTML = currentYear;
+
+document.querySelector("#getTotalDue").addEventListener("click", calculateTotal);
+
+function calculateTotal() {
+  // Declare and instantiate a variable with the numeric value from the subtotal field
+  let subtotal = Number(document.querySelector("#subtotal").value);
+
+  // Check if the membership checkbox is checked
+  let isMember = document.querySelector("#membership").checked;
+
+  // Apply a 20% discount if the user is a member
+  let discount = isMember ? 0.2 : 0;
+
+  // Calculate the total with or without the discount
+  let total = subtotal - subtotal * discount;
+
+  // Output the total to the total span with two decimals using a template string
+  document.querySelector("#totalDue").innerHTML = `Total Due: $${total.toFixed(2)}`;
+}
+
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let sourceArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
