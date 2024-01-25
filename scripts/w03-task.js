@@ -75,7 +75,7 @@ function calculateTotal() {
   let total = subtotal - subtotal * discount;
 
   // Output the total to the total span with two decimals using a template string
-  document.querySelector("#totalDue").innerHTML = `Total Due: $${total.toFixed(2)}`;
+  document.querySelector("#total").innerHTML = `Total Due: $${total.toFixed(2)}`;
 }
 
 /* ARRAY METHODS - Functional Programming */
