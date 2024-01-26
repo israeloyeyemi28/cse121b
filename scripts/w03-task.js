@@ -55,24 +55,21 @@ document
   .querySelector("#divideNumbers")
   .addEventListener("click", divideNumbers);
 
-document.querySelector("#getTotal").addEventListener("click", calculateTotal);
+  // Add an event listener for the Get Total Due button when clicked that invokes the following functionality
+document.getElementById("getTotal").addEventListener("click", function () {
+    // Declare and instantiate a variable that stores the numeric value entered by the user in the subtotal field
+    let subtotal = Number(document.getElementById("subtotal").value);
 
-function calculateTotal() {
-  // Declare and instantiate a variable with the numeric value from the subtotal field
-  let subtotal = Number(document.querySelector("#subtotal").value);
+    // Check IF the membership checkbox has been checked by the user to apply a 20% discount to the subtotal amount
+    if (document.getElementById("member").checked) {
+      subtotal = subtotal * 0.8;
+    }
 
-  // Check if the membership checkbox is checked
-  let isMember = document.querySelector("#membership").checked;
-
-  // Apply a 20% discount if the user is a member
-  let discount = isMember ? 0.2 : 0;
-
-  // Calculate the total with or without the discount
-  let total = subtotal - subtotal * discount;
-
-  // Output the total to the total span with two decimals using a template string
-  document.querySelector("#total").innerHTML = `{total.toFixed(2)}`;
-}
+    // Output the total to the the total span in the format shown with two decimals using a template string
+    document.getElementById("total").textContent = `Total: $${subtotal.toFixed(
+      2
+    )}`;
+  });
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
