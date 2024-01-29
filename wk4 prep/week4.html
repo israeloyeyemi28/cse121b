@@ -1,0 +1,30 @@
+<form name="selectForm">
+    <label for="musicTypes">Choose some music types, then click the button below:</label>
+    <select id="musicTypes" name="musicTypes" multiple>
+        <option selected>R&B</option>
+        <option>Jazz</option>
+        <option>Blues</option>
+        <option>New Age</option>
+        <option>Classical</option>
+        <option>Opera</option>
+    </select>
+    <button id="btn" type="button">How many are selected?</button>
+</form>
+<script>
+    function countSelected(selectObject) {
+        let numberSelected = 0;
+        for (let i = 0; i < selectObject.options.length; i++) {
+            if (selectObject.options[i].selected) {
+                numberSelected++;
+            }
+        }
+        return numberSelected;
+    }
+
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener("click", () => {
+        const musicTypes = document.selectForm.musicTypes;
+        console.log(`You have selected ${countSelected(musicTypes)} option(s).`);
+    });
+</script>
