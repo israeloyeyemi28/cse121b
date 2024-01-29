@@ -54,10 +54,23 @@ function divideNumbers() {
 document
   .querySelector("#divideNumbers")
   .addEventListener("click", divideNumbers);
-/* Decision Structure */
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
-document.querySelector("#year").innerHTML = currentYear;
+
+  // Add an event listener for the Get Total Due button when clicked that invokes the following functionality
+document.getElementById("getTotal").addEventListener("click", function () {
+    // Declare and instantiate a variable that stores the numeric value entered by the user in the subtotal field
+    let subtotal = Number(document.getElementById("subtotal").value);
+
+    // Check IF the membership checkbox has been checked by the user to apply a 20% discount to the subtotal amount
+    if (document.getElementById("member").checked) {
+      subtotal = subtotal * 0.8;
+    }
+
+    // Output the total to the the total span in the format shown with two decimals using a template string
+    document.getElementById("total").textContent = `Total: $${subtotal.toFixed(
+      2
+    )}`;
+  });
+
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let sourceArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
