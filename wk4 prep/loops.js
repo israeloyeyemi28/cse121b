@@ -1,7 +1,7 @@
 // loops.js
 myInfo = {
   name: "Brother T",
-  photo: "images/photo.jpg",
+  photo: "images/IMG_20221028_141537.jpg",
   favoriteFoods: ["Fettucini", "Steak", "Chicken", "Shrimp", "Baked Potato"],
   hobbies: ["Reading", "Fishing", "Camping"],
   placesLived: [
@@ -39,26 +39,10 @@ document.querySelector("#favorite-foods").appendChild(favoriteFood3);
 document.querySelector("#favorite-foods").appendChild(favoriteFood4);
 
 // with .forEach
-const foodsElement = document.querySelector('#favorite-foods');
+const foodsElement = document.querySelector("#favorite-foods");
 function createandAppendFoodItem(food) {
-  let favoriteFood = document.createElement('li');
+  let favoriteFood = document.createElement("li");
   favoriteFood.textContent = food;
   foodsElement.appendChild(favoriteFood);
 }
 myInfo.favoriteFoods.forEach(createAndAppendFoodItem);
-}
-
-// with .map
-  const foodsElement = document.querySelector('#favorite-foods');
-  function mapFoodItem(food) {
-    let favoriteFood = document.createElement('li');
-    favoriteFood.textContent = food;
-    return favoriteFood;
-  }
-  // this function could also be written this way using a template literal:
-  function mapFoodItemSmall(food) {
-    return `<li>${food}</li>`;
-  }
-  const foodListElements = myInfo.favoriteFoods.map(mapFoodItem);
-  // we need to flatten the array of strings into one big string. .join does this.
-  foodsElement.innerHTML = foodListElements.join('');
