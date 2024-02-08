@@ -47,7 +47,7 @@ let reset = function () {
 /* sortBy Function */
 let sortBy = function (temples) {
   reset();
-  let filter = document.querySelector("#sortBy").value;
+  let filter = document.querySelector("#filtered").value;
   switch (filter) {
     case "utah":
       displayTemples(
