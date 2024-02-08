@@ -246,6 +246,29 @@ footer {
     color: #eee;
 }
 
+
+#filtered {
+    appearance: none;
+    display: flex;
+    padding: .5rem;
+    background-color: #eee;
+    color: #444;
+    font-weight: 700;
+    margin: 1rem auto;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+#filtered option:disabled {
+    font-style: italic;
+    padding: 1rem;
+    background-color: #111;
+    color: #eee;
+}
+
+
+
 #temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
