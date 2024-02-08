@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(85deg, rgb(255, 145, 43), rgb(255, 29, 29), purple);
   margin: 0 auto;
+  text-align: center;
   padding: 30px;
   height: 100vh;
 }
@@ -38,8 +39,4 @@ button:hover {
   color: rgb(26, 23, 23);
 }
 
-#pokemonSprite {
-  display: none;
-  margin: 20px auto;
-}
 
