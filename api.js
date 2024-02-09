@@ -49,7 +49,7 @@ async function fetchData() {
       (ability) => ability.ability.name
     );
 
-    const pokemonTypes = data.types.map((type) => type.type.name).join(",");
+    const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
 
     const pokemonLocation = data.location_area_encounters.lenght;
 
@@ -61,9 +61,12 @@ async function fetchData() {
     secondImg.src = pokemonFront;
     secondImg.style.display = "block";
     const responseParagraph = document.createElement("h3");
-    responseParagraph.innerText = ` ${pokemonName} is an iconic pokemon character known for its speed and cute appearance. It belongs to the ${pokemonTypes} and it weighs ${pokemonWeight} and its height is ${pokemonHeight} inches. 
+    responseParagraph.innerText = `INFORMATION: 
+    ${pokemonName} is an iconic pokemon character known for its speed and cute appearance. 
+    It belongs to the ${pokemonTypes} and it weighs ${pokemonWeight}, its height is ${pokemonHeight} inches. 
     Abilities: ${pokemonAbilities}. 
-    ${pokemonName} is often found in ${pokemonLocation} different habitats. It is known to have a ${pokemonExperience}% base experience value and a catch rate of ${pokemonExperience}`;
+    ${pokemonName} is often found in ${pokemonLocation} different habitats. 
+    It is known to have a ${pokemonExperience}% base experience value and a catch rate of ${pokemonExperience}`;
     document.body.appendChild(responseParagraph);
   } catch (error) {
     console.error(error);
