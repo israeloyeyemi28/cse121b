@@ -39,21 +39,20 @@ async function fetchData() {
     const pokemonSprite = data.sprites.front_default;
 
     const pokemonFront = data.sprites.front_shiny;
-    console.log(pokemonFront)
+    console.log(pokemonFront);
     console.log(pokemonSprite);
     const imgElement = document.getElementById("pokemonSprite");
     const secondImg = document.getElementById("pokemonFront");
+    const pokemonHeight = data.height;
+    const pokemonWeight = data.weight;
 
     imgElement.src = pokemonSprite;
     imgElement.style.display = "block";
 
     secondImg.src = pokemonFront;
     secondImg.style.display = "block";
-
-    const pokemonHeight = data.height;
-    const pokemonWeight = data.weight;
-    const responseParagraph = document.createElement("p");
-    responseParagraph.innerText = ` ${pokemonName} is a pokemon that weighs ${pokemonWeight} and its height is ${pokemonHeight}`;
+    const responseParagraph = document.createElement("h3");
+    responseParagraph.innerText = ` ${pokemonName} is an iconic pokemon character known for its speed and cute appearance and it weighs ${pokemonWeight} and its height is ${pokemonHeight} inches`;
     document.body.appendChild(responseParagraph);
   } catch (error) {
     console.error(error);
