@@ -9,17 +9,24 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="inner">
         <h1>WELCOME TO THE ULTIMATE POKEMON FINDER APP</h1>
+        <hr>
+        <h3>POKEMON is a beloved franchise that captures the hearts of millions worldwide with its captivating
+            creatures , thrilling battles, and immersive adventures.</h3>
+        <hr>
+
+        <h4>&#x1F609</h4>
+        <h4>This app helps you remeber each characters</h4>
+        <input type="text" id="pokemonName" placeholder="ENTER POKEMON NAME: pikachu, ditto, bulbasaur">
+        <button onclick="fetchData()">Get Pokemon</button><br>
+
+        <img src="" alt="Pokemon sprite" id="pokemonSprite" style="display: none;" style="width: 80%;">
+
+        <img src="" alt="second img" id="secondImg" style="display: none;" style="width: 80%;">
+
     </div>
-
-    <hr>
-    <input type="text" id="pokemonName" placeholder="ENTER POKEMON NAME">
-    <button onclick="fetchData()">Get Pokemon</button><br>
-
-    <img src="" alt="Pokemon sprite" id="pokemonSprite" style="display: none;">
-
-
 
 
     <script src="api.js"></script>
