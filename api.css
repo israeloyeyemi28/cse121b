@@ -1,7 +1,9 @@
 body {
-  background-color: rgb(228, 189, 62);
+  background: linear-gradient(85deg, rgb(255, 145, 43), rgb(255, 29, 29));
   margin: 0 auto;
   text-align: center;
+  padding: 30px;
+  height: 100vh;
 }
 
 .inner {
@@ -17,22 +19,18 @@ body {
 #pokemonName {
   color: rgb(255, 153, 21);
   background-color: rgb(26, 23, 23);
-  margin: 20px;
+  margin: 20px auto;
   height: 30px;
   width: 80%;
   border-radius: 10px;
 }
+
 button {
-  color: rgba(250, 142, 0, 0.788);
   font-size: 2 rem;
   font-weight: 700;
-  padding: 30px;
-  margin: 30px;
+  padding: 15px 30px;
+  margin: 20px auto;
   border-radius: 10px;
-}
 
-button:hover {
-  transition: transform 0.4s ease 0;
-  color: #fff;
-  background-color: orangered;
+  transition: transform 0.4s ease 0, backgroung-color 0.4s, color 0.4s;
 }

@@ -44,17 +44,17 @@ const getTemples = async () => {
 let reset = function () {
   templesElement.textContent = " ";
 };
-/* sortBy Function */
-let sortBy = function (temples) {
+/* filterTemples Function */
+let filterTemples = function (temples) {
   reset();
-  let filter = document.querySelector("#sortBy").value;
+  let filter = document.querySelector("#filtered").value;
   switch (filter) {
     case "utah":
       displayTemples(
         temples.filter((temple) => temple["location"].includes("Utah"))
       );
       break;
-    case "notutah":
+    case "nonutah":
       displayTemples(
         temples.filter((temple) => !temple["location"].includes("Utah"))
       );
@@ -75,6 +75,6 @@ let sortBy = function (temples) {
 
 getTemples();
 /* Event Listener */
-document.querySelector("#sortBy").addEventListener("change", () => {
-  sortBy(templeList);
+document.querySelector("#filtered").addEventListener("change", () => {
+  filterTemples(templeList);
 });
