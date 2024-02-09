@@ -42,7 +42,7 @@ async function fetchData() {
     console.log(pokemonFront)
     console.log(pokemonSprite);
     const imgElement = document.getElementById("pokemonSprite");
-    const secondImg = document.getElementById("secondImg");
+    const secondImg = document.getElementById("pokemonFront");
 
     imgElement.src = pokemonSprite;
     imgElement.style.display = "block";
