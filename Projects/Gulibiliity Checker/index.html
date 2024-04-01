@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <h2>Gulibility Checker</h2>
+            <h3>Do you want to know how to keep a gullible person busy for hours? Y/N</h3>
+            <div class="button">
+                <button id="yes">Yes</button>
+                <button id="no">No</button>
+            </div>
+            <div class="result"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let result = document.querySelector(".result")
+    let yes = document.querySelector("#yes");
+    let no = document.querySelector("#no");
+    let count = 0;
+    yes.addEventListener("click", () => {
+        count++;
+        result.innerHTML = ` <h3>Do you want to know how to keep a gullible person busy for hours? Y/N</h3>`
+    })
+    no.addEventListener("click", () => {
+        count++;
+        result.innerHTML = ` <h3>Took you long enough 🤣🤣. ${count}</h3>`
+    })
+
+</script>
+
+</html>

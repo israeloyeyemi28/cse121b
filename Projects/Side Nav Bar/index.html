@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Nav Bar</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Code Commerece</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="images/Optimized-not optimized rafters.jpg" alt="rafters" class="user-img">
+            <div>
+                <p class="bold">Israel O. Oyeyemi</p>
+                <p>Admin</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-shopping-bag"></i>
+                    <span class="nav-item">Products</span>
+
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-list-check"></i>
+                    <span class="nav-item">Categories</span>
+
+                </a>
+                <span class="tooltip">Categories</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-food-menu"></i>
+                    <span class="nav-item">Orders</span>
+
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-body"></i>
+                    <span class="nav-item">Customers</span>
+
+                </a>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">Settings</span>
+
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Log out</span>
+
+                </a>
+                <span class="tooltip">Log out</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Code Commerece </h1>
+            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi fugiat deleniti veniam qui
+                impedit, natus nihil adipisci ad minima, tempora id quia eius neque vitae officiis repudiandae. Quo,
+                doloremque.</h5>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nihil sed, veritatis ipsum placeat esse
+                quod labore voluptatem nobis, iure in porro ad? Nulla tempora quia blanditiis, ipsum amet alias. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consequuntur, a accusamus assumenda, aliquam
+                sunt perferendis voluptates obcaecati consectetur consequatur numquam. Ratione alias numquam et quos,
+                officia esse maxime voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo quae,
+                nesciunt praesentium pariatur ea deleniti corrupti vero eligendi, ipsum quia ab exercitationem iste
+                illo? Magnam sapiente animi veritatis sit?</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti excepturi magnam reiciendis, fugiat
+                facere, perspiciatis odio mollitia neque eligendi autem, veniam labore pariatur velit architecto tempore
+                dolore laudantium quia. Commodi.
+                Consectetur id praesentium dolore dolores quis mollitia, delectus perspiciatis aspernatur illo culpa aut
+                asperiores alias molestias cumque vel quam necessitatibus quo. Qui doloremque ea alias, odio cum error
+                nihil nulla?
+            </p>
+
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    btn.onclick = function () {
+        sidebar.classList.toggle("active")
+    };
+</script>
+
+</html>

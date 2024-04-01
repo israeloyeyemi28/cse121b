@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(85deg, orangered, orange, yellow);
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.inner {
+  width: 80%;
+
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+  border-radius: 10px;
+  background: linear-gradient(90deg, red, orange, yellow);
+}
+
+#pokemonName {
+  color: rgb(255, 153, 21);
+  background-color: rgb(26, 23, 23);
+  margin: 0 auto;
+  height: 20px;
+  width: 50%;
+}
+
+li {
+  list-style: outside;
+  background-color: rgb(241, 255, 40);
+}
+
+button {
+  font-size: 2 rem;
+  font-weight: 700;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+button:hover {
+  transition: transform 0.4s ease 0;
+  background-color: orangered;
+  color: #fff;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | W03: Programming Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="Calculator/index.html">Calculator App</a>
+        <a href="w01-task.html">W1 Task</a>
+        <a href="w03-task.html" class="active">W3 Task</a>
+        <a href="w04-task.html">W4 Task</a>
+        <a href="w05-task.html">W5 Task</a>
+        <a href="project.html">Project</a>
+    </nav>>
+    <header>
+        <h1>Calculator App</h1>
+    </header>
+    <main id="task3">
+        <div id="content">
+            <section id="section1">
+                <h2>Arithmetics</h2>
+                <article>
+                    <h3>Addition</h3>
+                    <div>
+                        <label for="add1">Number 1:</label>
+                        <input type="text" id="add1" name="add1">
+                    </div>
+                    <div>
+                        <label for="add2">Number 2:</label>
+                        <input type="text" id="add2" name="add2">
+                    </div>
+                    <div>
+                        <input type="button" id="addNumbers" value="Add Numbers">
+                    </div>
+                    <div>
+                        <label for="sum">Sum:</label>
+                        <input type="text" id="sum" name="sum" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h3>Subtraction</h3>
+                    <div>
+                        <label for="subtract1">Number 1:</label>
+                        <input type="text" id="subtract1" name="subtract1">
+                    </div>
+                    <div>
+                        <label for="subtract2">Number 2:</label>
+                        <input type="text" id="subtract2" name="subtract2">
+                    </div>
+                    <div>
+                        <input type="button" id="subtractNumbers" value="Subtract Numbers">
+                    </div>
+                    <div>
+                        <label for="difference">Difference:</label>
+                        <input type="text" id="difference" name="difference" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h3>Multiplication</h3>
+                    <div>
+                        <label for="factor1">Number 1:</label>
+                        <input type="text" id="factor1" name="factor1">
+                    </div>
+                    <div>
+                        <label for="factor2">Number 2:</label>
+                        <input type="text" id="factor2" name="factor2">
+                    </div>
+                    <div>
+                        <input type="button" id="multiplyNumbers" value="Multiply Numbers">
+                    </div>
+                    <div>
+                        <label for="product">Product:</label>
+                        <input type="text" id="product" name="product" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h3>Division</h3>
+                    <div>
+                        <label for="dividend">Dividend:</label>
+                        <input type="text" id="dividend" name="dividend">
+                    </div>
+                    <div>
+                        <label for="divisor">Divisor:</label>
+                        <input type="text" id="divisor" name="divisor">
+                    </div>
+                    <div>
+                        <input type="button" id="divideNumbers" value="Divide Numbers">
+                    </div>
+                    <div>
+                        <label for="quotient">Quotient:</label>
+                        <input type="text" id="quotient" name="quotient" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h3>Average</h3>
+                    <div>
+                        <label for="avg1">Number 1:</label>
+                        <input type="text" id="avg1" name="avg1">
+                    </div>
+                    <div>
+                        <label for="avg2">Number 2:</label>
+                        <input type="text" id="avg2" name="avg2">
+                    </div>
+                    <div>
+                        <input type="button" id="avgValue" value="Get Average">
+                    </div>
+                    <div>
+                        <label for="avg">Avg:</label>
+                        <input type="text" id="avg" name="avg" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h2>Conversion</h2>
+                    <h3>Day-To-Hour</h3>
+                    <div>
+                        <label for="avg1">Day:</label>
+                        <input type="text" id="dayVal" name="Day Value">
+                    </div>
+                    <div>
+                        <input type="button" id="getHour" value="Get Hour">
+                    </div>
+                    <div>
+                        <label for="avg">Hour:</label>
+                        <input type="text" id="hour" name="hour" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h3>Square of a Number</h3>
+                    <div>
+                        <label for="square1">Number:</label>
+                        <input type="text" id="squareVal" name="Number">
+                    </div>
+                    <div>
+                        <input type="button" id="getSquareVal" value="Get Square">
+                    </div>
+                    <div>
+                        <label for="avg">Square:</label>
+                        <input type="text" id="square" name="square" disabled>
+                    </div>
+                </article>
+                <article>
+                    <h2>Area of Shapes</h2>
+                    <h3>Square</h3>
+                    <div>
+                        <label for="len">Lenght :</label>
+                        <input type="text" id="len" name="len">
+                    </div>
+                    <div>
+                        <label for="breath">Breath:</label>
+                        <input type="text" id="breath" name="breath">
+                    </div>
+                    <div>
+                        <input type="button" id="getArea" value="Get Area">
+                    </div>
+                    <div>
+                        <label for="area">Area:</label>
+                        <input type="text" id="area" name="area" disabled>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> Portfolio Projects
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

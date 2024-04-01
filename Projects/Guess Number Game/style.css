@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(251, 255, 16);
+}
+
+h1 {
+  animation: rotate 2s linear;
+  text-align: center;
+  font-size: 70px;
+  font-style: oblique;
+  background: linear-gradient(to right, red, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+p {
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: linear-gradient(red, blue);
+}
+
+.box {
+  text-align: center;
+  margin-top: 80px;
+  padding: 50px;
+}
