@@ -1,0 +1,21 @@
+.slider {
+  margin: 55px;
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  animation: mymove 20s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    background-image: url(images/shop1.jpg);
+  }
+  50% {
+    background-image: url("images/BingWallpaper.jpg");
+  }
+  100% {
+    background-image: url("images/IMG_20221028_141537.jpg");
+  }
+}
