@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/animatedshop.png);
+  background-image: url(images/astronautburger9.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -178,7 +178,7 @@ section {
   display: flex;
   background-color: #ffee00;
   /* position: fixed;
-  bottom: 0; */
+    bottom: 0; */
   width: 100%;
 }
 
@@ -245,8 +245,8 @@ section {
 }
 
 /* 
-.service {
-    margin: 0 auto;
-    text-align: center;
-    background-image: url(images/astronautburger9.webp);
-  } */
+  .service {
+      margin: 0 auto;
+      text-align: center;
+      background-image: url(images/astronautburger9.webp);
+    } */

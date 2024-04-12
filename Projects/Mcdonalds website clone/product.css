@@ -26,6 +26,7 @@ body {
   z-index: 9999;
   background: var(--primary-color);
   padding: 20px 60px;
+  padding-top: 50px;
 }
 
 .logo img {
@@ -242,6 +243,6 @@ section {
   }
 
   .nav-bar {
-    padding: 50px;
+    padding: 20px;
   }
 }
